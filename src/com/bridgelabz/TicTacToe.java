@@ -1,11 +1,22 @@
 package com.bridgelabz;
 
 public class TicTacToe {
-    int a,b;
-    double c;
+
+    private static char[] board = new char[10];
+
+    /***
+     * UC-1 - This method is Assigning space to Board Array
+     */
+    static void startGame(){
+        for( int i = 1; i <= 9; i++) {
+            board[i] = ' ';
+        }
+    }
 
     public static void main(String[] args) {
-        TicTacToe ticTacToe = new TicTacToe();
-        System.out.println();
+        System.out.println("Welcome to Tic Tac Toe Simulation");
+
+        startGame();
+
     }
 }
